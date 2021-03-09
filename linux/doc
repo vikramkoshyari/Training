@@ -187,7 +187,7 @@
 				
 
 			
-	2-> rmdir - this command remove empty directory 
+	2-> rmdir -this command remove empty directory 
 			ex: rmdir example
 
 	3-> rm - this command remove file and directory
