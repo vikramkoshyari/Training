@@ -43,7 +43,8 @@ vim editor ---------------------
 			     :vsplit HelloWorld.java - vsplit split screen vertically between files.
 							we can open multiple files in split screen
 
-			16-> :%s/Hello/Hi/g - this %s command replace Hello with Hi throughout the file.
+			16-> :%s/Hello/Hi/g -this %s command replace Hello with Hi throughout the file.
+
 
 			
  
