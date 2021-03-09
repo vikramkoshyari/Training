@@ -3,8 +3,7 @@
 							Directory Structure of Linux
 
 
-		1---> / : Root Directory - Everything on your Linux system is located under the / directory, known as the root directory.
-					   While another partition would be located at D:\ on Windows, this other partition would appear in 						   another folder under / on Linux.
+		1---> / : Root Directory - Everything on your Linux system is located under the / directory, known as the root directory.While another partition would be located at D:\ on Windows, this other partition would appear in another folder under / on Linux.
 
 		2---> /bin(essential user program ex bash shell) -  The /bin directory contains the essential user binaries (programs) that 									    must be present when the system is mounted in single-user 									    mode.Applications such as Firefox are stored in /usr/bin, while important 									    system programs and utilities such as the bash shell are located 									    in /bin.placing these files in the /bin directory ensures the system will 									    have these important utilities even if no other file systems are mounted.
 
