@@ -114,7 +114,7 @@
 				usage:
 					chmod u=rwx,g=rx,o=r head.txt
 			 
-	21-> chmod - chown command enables you to change or transfer the ownership of a file to 		     the specified username.
+	21-> chown - chown command enables you to change or transfer the ownership of a file to 		     the specified username.
 			usage:
 				chown vikram ./Desktop/basic\ command/head/head.txt
 
@@ -175,6 +175,37 @@
 	32-> userdel -> userdel is use to delete the user.
 				usage:
 					userdel vikram
+
+	folder operations ------------
+
+	1-> mkdir - this command create an empty directory.
+
+			ex: mkdir example
+			    mkdir example1 example2 example3 //create multiple empty directory
+			    mkdir -p example1/hello/world // create nested empty directory    
+			
+				
+
+			
+	2-> rmdir - this command remove empty directory 
+			ex: rmdir example
+
+	3-> rm - this command remove file and directory
+				ex: rm -f ./example/test.txt // forcefully remove file test.txt
+				    rm -r example // delete directory along with it's content
+				    rm -rf example // forcefully and recursively delete a 							      directory along with it's content.
+	4-> cp - this command cp file.
+				ex: cp test.txt test1.txt // copy content of test.txt in test1.txt
+							     if test1 does'nt exit then it create 								     test1.txt otherwise content of test1 								     is overwritten.
+				    cp -r example example1 // it copy the content of example 								      directory to example1 directory if 								      example1 does'nt exist it create the 								      example1
+	
+
+		
+
+
+ 
+
+	
 
 
 					
