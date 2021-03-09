@@ -1,0 +1,40 @@
+vim editor ---------------------
+
+	usage: vim test.txt (filename) // this open file in vim if test.txt not exist then vim 						  						  create test.txt
+	Now, vim have multiple modes 3 basic modes:
+		1-> Normal - Default; for navigation and simple editing // default it is in normal 										   mode or press escape to 										   enter in normal mode.
+
+		2-> Insert - For explicitly inserting and modifying text // press i to enter 										    insert mode
+
+		3-> command Line - For operations like saving, exiting, etc. // press : followed 											by command to 											execute command.
+
+		commands:
+			1-> :q! or :ZQ - to quit vim without saving anything.
+
+			2-> :wq or :x! - to save file and quit vim.
+
+			3-> :set number - display line number
+
+			4-> :<line number > - jump curson to that line number
+
+			5-> :$ - jump to the end line of the file.
+
+			6-> dd - this command delete line where cursor is present.
+
+			7-> u - this command undo the changes in file 
+
+			8-> ctrl+r - this command redo the changes in the file
+
+			9-> v - enter the visual mode where using right left up down key to select and deselect lines in file
+
+			10-> y (yank mode)- it copy the selected lines in file in clipboard 			
+			11-> o - create new line underneath a line where cursor is present and 	enter in to insert mode.
+
+			12-> esc - to enter normal mode 
+
+			13-> p - paste the line in clipboard.
+
+			14-> :/hello(search-keyword) - search the keyword in intire file and highlight them. if there are multiple keyword in 							       file then press lowercase n navigate to next bottom keyword in file and uppercase N 							       navigate to upper keyword depending on the position of cursor.
+
+			15-> :split HelloWorld.java - split command split the screen horizontally between file already open and file mention 							      in split command. use ctrl+ww to switch between files.
+ 
