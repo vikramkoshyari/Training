@@ -5,29 +5,29 @@
 
 		1---> / : Root Directory - Everything on your Linux system is located under the / directory, known as the root directory.While another partition would be located at D:\ on Windows, this other partition would appear in another folder under / on Linux.
 
-		2---> /bin(essential user program ex bash shell) -  The /bin directory contains the essential user binaries (programs) that 									    must be present when the system is mounted in single-user 									    mode.Applications such as Firefox are stored in /usr/bin, while important 									    system programs and utilities such as the bash shell are located 									    in /bin.placing these files in the /bin directory ensures the system will 									    have these important utilities even if no other file systems are mounted.
+		2---> /bin(essential user program ex bash shell) -  The /bin directory contains the essential user binaries (programs) that must be present when the system is mounted in single-user mode.Applications such as Firefox are stored in /usr/bin, while important system programs and utilities such as the bash shell are located in /bin.placing these files in the /bin directory ensures the system will have these important utilities even if no other file systems are mounted.
 
-		3---> /boot(static boot files) - The /boot directory contains the files needed to boot the system – for example, the GRUB boot 							 loader’s files and your Linux kernels are stored here. The boot loader’s configuration files 							 aren’t located here, though – they’re in /etc with the other configuration files.
+		3---> /boot(static boot files) - The /boot directory contains the files needed to boot the system – for example, the GRUB boot loader’s files and your Linux kernels are stored here. The boot loader’s configuration files aren’t located here, though – they’re in /etc with the other configuration files.
 
-		4---> /cdrom - The /cdrom directory isn’t part of the FHS standard, but you’ll still find it on Ubuntu and other operating 				       systems. It’s a temporary location for CD-ROMs inserted in the system.
+		4---> /cdrom - The /cdrom directory isn’t part of the FHS standard, but you’ll still find it on Ubuntu and other operating systems. It’s a temporary location for CD-ROMs inserted in the system.
 
-		5---> /dev (device files) - Linux exposes devices as files, and the /dev directory contains a number of special files that 						    represent devices. These are not actual files as we know them, but they appear as files – for 						    example, /dev/sda represents the first SATA drive in the system.
+		5---> /dev (device files) - Linux exposes devices as files, and the /dev directory contains a number of special files that represent devices. These are not actual files as we know them, but they appear as files – for example, /dev/sda represents the first SATA drive in the system.
 
-		6---> /etc (config files) - The /etc directory contains configuration files, which can generally be edited by hand in a text 						    editor. Note that the /etc/ directory contains system-wide configuration files – user-specific   						    configuration files are located in each user’s home directory.
+		6---> /etc (config files) - The /etc directory contains configuration files, which can generally be edited by hand in a text editor. Note that the /etc/ directory contains system-wide configuration files – user-specific configuration files are located in each user’s home directory.
 
-		7--> /home   - The /home directory contains a home folder for each user. For example, if your user name is bob, you have a 				       home folder located at /home/bob. This home folder contains the user’s data files and user-specific 				       configuration files. Each user only has write access to their own home folder and must obtain elevated 				       permissions (become the root user) to modify other files on the system.
+		7--> /home   - The /home directory contains a home folder for each user. For example, if your user name is bob, you have a home folder located at /home/bob. This home folder contains the user’s data files and user-specific configuration files. Each user only has write access to their own home folder and must obtain elevated permissions (become the root user) to modify other files on the system.
 
-		9---> /lib - The /lib directory contains libraries needed by the essential binaries in the /bin and /sbin folder. Libraries 				     needed by the binaries in the /usr/bin folder are located in /usr/lib.
+		9---> /lib - The /lib directory contains libraries needed by the essential binaries in the /bin and /sbin folder. Libraries needed by the binaries in the /usr/bin folder are located in /usr/lib.
 
-		10---> /lost+found - Each Linux file system has a lost+found directory. If the file system crashes, a file system check will 					     be performed at next boot. Any corrupted files found will be placed in the lost+found directory, so you 					     can attempt to recover as much data as possible.
+		10---> /lost+found - Each Linux file system has a lost+found directory. If the file system crashes, a file system check will be performed at next boot. Any corrupted files found will be placed in the lost+found directory, so you can attempt to recover as much data as possible.
 
-		11---> /media(Removable Media) - The /media directory contains subdirectories where removable media devices inserted into the 							 computer are mounted.
+		11---> /media(Removable Media) - The /media directory contains subdirectories where removable media devices inserted into the computer are mounted.
 
 		12---> /opt(Optional Package) - The /opt directory contains subdirectories for optional software packages.
 
-		13---> /proc(kernel & process file) - The /proc directory similar to the /dev directory because it doesn’t contain standard 							      files. It contains special files that represent system and process information.
+		13---> /proc(kernel & process file) - The /proc directory similar to the /dev directory because it doesn’t contain standard files. It contains special files that represent system and process information.
 
-		14---> /root(root home directory) - The /root directory is the home directory of the root user. Instead of being located 							    at /home/root, it’s located at /root. This is distinct from /, which is the system root 							    directory.
+		14---> /root(root home directory) - The /root directory is the home directory of the root user. Instead of being located at /home/root, it’s located at /root. This is distinct from /, which is the system root directory.
 
 		
 
