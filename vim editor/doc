@@ -33,3 +33,8 @@ vim editor ---------------------
 			12-> esc - to enter normal mode 
 
 			13-> p - paste the line in clipboard.
+
+			14-> :/hello(search-keyword) - search the keyword in intire file and highlight them. if there are multiple keyword in 							       file then press lowercase n navigate to next bottom keyword in file and uppercase N 							       navigate to upper keyword depending on the position of cursor.
+
+			15-> :split HelloWorld.java - split command split the screen horizontally between file already open and file mention 							      in split command. use ctrl+ww to switch between files.
+ 
