@@ -198,10 +198,86 @@
 				ex: cp test.txt test1.txt // copy content of test.txt in test1.txt
 							     if test1 does'nt exit then it create 								     test1.txt otherwise content of test1 								     is overwritten.
 				    cp -r example example1 // it copy the content of example 								      directory to example1 directory if 								      example1 does'nt exist it create the 								      example1
-	
+	ls------------------------------
+
+	1-> ls - :
+		-a - list entries starting with .
+		-l - list entries with information like permissions , owner etc..
+		-d - list directory themself not their content.
+		-g -similar to l but not list owner
+		-h - with -l or -s print human redable size
+		-S - print entries sort by size, largest first
+		--sort=word - list entities sort by word . word would be time,size,extension,version
+		
+	scp----------------------------
+
+      	1->scp(secure copy):
+
+		 scp, copy a file or directory:
+		a-> From your local system to a remote system.
+		b-> From a remote system to your local system.
+		c-> Between two remote systems from your local system.
+
+
+
+		usage:
+		scp [OPTION] [user@]SRC_HOST:]file1 [user@]DEST_HOST:]file2
+		here,
+			option- such as cipher, ssh configuration, ssh port, limit, recursive copy etc.
+
+			[user@]SRC_HOST:]file1 - Source file.
+
+			[user@]DEST_HOST:]file2 - Destination file
+
+		options are:
+			-P - Specifies the remote host ssh port.
+			-C - This option forces scp to compresses the data as it is sent to the destination machine.
+			-r - This option tells scp to copy directories recursively.
+		
+			--->copy local file to remote system:
+			ex - scp file.txt remote_username@10.10.0.2:/remote/directory
+				here,
+					remote_username = username on the remote server
+					10.10.0.2 = server ip address
+					/remote/directory = path of directory want to copy file to.
+  
+
+				-P - add port in which ssh of remote host is listening.
+
+					ex- scp -P 2322 file.txt remote_username@10.10.0.2:/remote/directory
+
+				-r - To copy a directory from a local to remote system, use the -r option:
+
+
+					ex - scp -r /local/directory remote_username@10.10.0.2:/remote/directory
+
+			-----> copy file from one host to another host.
+
+				ex- scp user1@host1.com:/files/file.txt user2@host2.com:/files
+					have to enter password for both remote account and file is directly transfer from host1 to host2.
+
+
+				here,
+					user1@host1.com:/files/file.txt = file from host1 or source file
+
+					user2@host2.com:/files = desitnation host2
+
+				To route the traffic through the machine on which the command is issued, use the -3 option:
+
+					ex- scp -3 user1@host1.com:/files/file.txt user2@host2.com:/files
+
+
+
+
+
+
+
+
+
+
+
 
 		
-
 
  
 
