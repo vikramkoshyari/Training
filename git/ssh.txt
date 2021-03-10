@@ -1,0 +1,30 @@
+				Adding SSH key to the git account
+
+
+	Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can 	connect to GitHub without supplying your username and personal access token at each visit.
+
+	1-> checking for existing ssh keys
+		ex -  ls -al ~/.ssh   // this list all the keys if exist in .ssh directory.
+
+	2-> Generating ssh key:
+		ex - ssh-keygen -T (output filename) -C ("vikramkoshyari222@gmail.com")
+			at prompt enter passphase
+
+	3-> Adding ssh key to ssh-agent:
+		a-> starting ssh-agent in the background:
+			ex- eval "$(ssh-agent -s)" // eval take arguments and combine it the string and execute as command in shell . $() is command substitution command inside parenthesis execute in sub shell and out is placed in original command
+
+		b-> Adding ssh-key to ssh-agent:
+			ex- ssh-add ~/.ssh/filename //filename specified when generating ssh key.
+
+	4-> Adding ssh key to the github account:
+		a-> copy ssh key to clipboard:
+			ex - xclip -selection clipboard < ~/.ssh/filename.pub 
+
+		b-> paste in github account new ssh key.
+
+	
+		
+ 		
+
+			
