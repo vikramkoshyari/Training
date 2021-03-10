@@ -17,10 +17,58 @@
 			     git add .(means all file in the directory which is not yet added)
 			     or git add test.txt (add only test.txt file)
 
-	4-> git status - this command show files in the directory which is not yet commite . if it is in red color it means files are not even 			  	 added to the staging area . or it is green if it is already added to staging area.
+	4-> git status - this command show files in the directory which is not yet commite . if it is in red color it means files are not even added to the staging area . or it is green if it is already added to staging area.
 
 	5-> git log  - this command show the previous commits or commit logs.
 
-	6-> git rm -  this command remove the file from the working tree.
+	6-> git rm -  this command remove the file from the working tree. or unstaged file.
+			ex- cd example
+			    git rm --cached test.txt
+
+	7-> git mv - this command move or rename a file or directory.
+
+			ex- cd example
+			    git mv test.txt test1.txt //to rename file
+			    git mv test.txt ./example1/test.txt //to move file 
+
+	8-> git branch - this command list , create or delete branch.
+
+				ex- git branch // this show list of branch 
+				    git branch help // this create branch with name help
+				    git branch -D help // this delete branch help in local repository
+				    git push origin --delete help // this delete branch in remote directory
+
+	9-> git checkout - this command switch branch and restore working files.
+
+				ex- git checkout help // switch branch to help
+				    git checkout master // switch branch to master
+
+
+	10-> git commit - this command save changes to repository.
+
+				ex- git commit -m "initial" //save change to repository with message string -m " "
+
+
+	11-> git merge -  this command merge two or more branches together.
+
+				ex- git branch awesome //created new branch awesome
+				    git checkout awesome // switch to branch awesome
+				    touch awesome.txt //create new file on awesome
+				    git add awesome.txt // add to working directory
+				    git commit -m "added awesome.txt" // commit in awesome branch
+				    git checkout master // switch to master
+				    git merge awesome master //merge awesome branch with master
+
+	12-> git push - this command push local repository to remote repository.
+
+				ex- git push origin master //push local repository master branch to remote repository origin.
+
+	13-> git remote add  - this command add remote of remote repository.
+
+				ex- git remote add origin url // here origin is name of remote give any name we you like and url is the remote repository HTTPS address.
+
+	 
+				    
+			    
 
  
