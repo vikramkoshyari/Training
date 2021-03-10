@@ -67,6 +67,15 @@
 
 				ex- git remote add origin url // here origin is name of remote give any name we you like and url is the remote repository HTTPS address.
 
+	14-> git pull - This command is used to fetch and download content from a remote repository and immediately update the local repository to match that content.
+
+				ex - git pull remote branch // remote = remote of remote directory
+				     git pull url  // url = HTTPS of remote directory
+
+	Q-> what is ssh key?
+	---> ssh key is basically authentication credential. authorized key define who can access each system.
+
+
 	 
 				    
 			    
