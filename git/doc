@@ -1,0 +1,26 @@
+	
+								GIT commands
+
+
+	1-> git init - it create an empty git repository or to reinitialize the existing one. 
+			ex - mkdir example
+			     cd example
+			     git init
+
+	2-> git clone - it clone repository into new new directory.
+			ex- cd example
+			    git clone https://github.com/vikramkoshyari/Natours.git
+
+	3-> git add - it add changes to the working working directory into staging area. and in next commit it include update to the paticular 			      file.
+			ex - cd example 
+			     touch test.txt
+			     git add .(means all file in the directory which is not yet added)
+			     or git add test.txt (add only test.txt file)
+
+	4-> git status - this command show files in the directory which is not yet commite . if it is in red color it means files are not even 			  	 added to the staging area . or it is green if it is already added to staging area.
+
+	5-> git log  - this command show the previous commits or commit logs.
+
+	6-> git rm -  this command remove the file from the working tree.
+
+ 
